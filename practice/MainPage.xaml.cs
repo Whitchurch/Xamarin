@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
+
 namespace practice
 {
     // Learn more about making custom code visible in the Xamarin.Forms previewer
@@ -15,7 +16,16 @@ namespace practice
     {
         public MainPage()
         {
-            InitializeComponent();
+            try
+            {
+                InitializeComponent();
+                BindingContext = new viewmodel_Mainpage();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+            
         }
     }
 }

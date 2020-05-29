@@ -2,6 +2,16 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="practice.MainPage">
     <StackLayout>
         <!-- Place new controls here -->
-        <Label Text="Practice App" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        <ScrollView>
+             <StackLayout>
+                <Label Text="Welcome to Practice App" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+                <Label Text="Use this to re-learn everything I forgot 2 years ago" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="DarkRed" />
+                <Label Text="Let us implement: 1) DataBinding 2) Buttons 3) MVVM design pattern on this page" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="DarkGreen" />
+                <Label Text="That will complete my First revision- Whitchurch" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="DarkGoldenrod" />
+                <Label Text="{Binding PropertyBoundLabel}" TextColor="Black" TextDecorations="Underline"></Label>
+                 <Button Text="Go to Next Training Segment" Command="{Binding NextCommand}"></Button>
+             </StackLayout>
+        </ScrollView>
+        
     </StackLayout>
 </ContentPage>
