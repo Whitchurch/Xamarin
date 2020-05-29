@@ -9,6 +9,7 @@
                 <Label Text="Let us implement: 1) DataBinding 2) Buttons 3) MVVM design pattern on this page" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="DarkGreen" />
                 <Label Text="That will complete my First revision- Whitchurch" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="DarkGoldenrod" />
                 <Label Text="{Binding PropertyBoundLabel}" TextColor="Black" TextDecorations="Underline"></Label>
+                 <Entry Text="{Binding PropertyEntryText}"></Entry>
                  <Button Text="Go to Next Training Segment" Command="{Binding NextCommand}"></Button>
              </StackLayout>
         </ScrollView>
