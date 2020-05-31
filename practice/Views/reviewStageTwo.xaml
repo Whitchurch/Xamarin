@@ -4,6 +4,9 @@
         <ScrollView>
             <StackLayout>
                 <Label Text="Review Stage 2" TextColor="Red"></Label>
+                <Label Text="Let us implement: 1)Phone Database using SQL-Lite(ORM) approach." HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="DarkGreen" />
+                <Label Text="That will complete my Second revision- Whitchurch" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="DarkGoldenrod" />
+                <Button Text="Next Stage" BackgroundColor="Green" TextColor="White" Command="{Binding NextCommand}"></Button>
                 <Button Text="Return to Page" BackgroundColor="Red" TextColor="White" Command="{Binding BackCommand}"></Button>
             </StackLayout>
         </ScrollView>
