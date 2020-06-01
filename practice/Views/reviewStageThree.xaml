@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:forms="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms" x:Class="practice.Views.reviewStageThree">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+
+            <StackLayout>
+                 <Label Text="Review Stage 3" TextColor="Red"></Label>
+                <Label Text="1) Read data from local Database and display information" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="DarkGreen" />
+            </StackLayout>
+
+            <StackLayout>
+                <StackLayout Orientation="Horizontal">
+                <Label Text="Race:" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" TextColor="Black" />
+                <Label Text="{Binding PropertyRace1}" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" TextColor="DarkGreen" />
+                <Label Text="Total of Race:" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" TextColor="Black" />
+                <Label Text="{Binding PropertyTotal1}" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" TextColor="Red" />
+                </StackLayout>
+
+
+                <StackLayout Orientation="Horizontal">
+                <Label Text="Race:" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" TextColor="Black" />
+                <Label Text="{Binding PropertyRace2}" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" TextColor="DarkGreen" />
+                <Label Text="Total of Race:" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" TextColor="Black" />
+                <Label Text="{Binding PropertyTotal2}" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" TextColor="Red" />
+                </StackLayout>
+
+
+
+                <StackLayout Orientation="Horizontal">
+                <Label Text="Race:" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" TextColor="Black" />
+                <Label Text="{Binding PropertyRace3}" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" TextColor="DarkGreen" />
+                <Label Text="Total of Race:" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" TextColor="Black" />
+                <Label Text="{Binding PropertyTotal3}" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" TextColor="Red" />
+                </StackLayout>
+
+
+            </StackLayout>
+                <StackLayout>
+
+              <StackLayout>
+                <Label Text="2) Display Model information using some Graphs and Charts" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="DarkGreen" />   
+                <forms:ChartView Chart="{Binding PropertyData}" HeightRequest="220"/>
+
+            </StackLayout>
+
+
+                <Label Text="That will complete my Third revision- Whitchurch" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="DarkGoldenrod" />
+                <Button Text="Return to Page" BackgroundColor="Red" TextColor="White" Command="{Binding BackCommand}"></Button>
+                </StackLayout>
+
+            </StackLayout>
+
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>
